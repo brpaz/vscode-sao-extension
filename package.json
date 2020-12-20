@@ -1,8 +1,9 @@
 {
   "name": "vscode-sao",
   "displayName": "VSCode SAO",
-  "description": "Trigger SAO js generators from VS Code",
+  "description": "Trigger SAO.js generators from VS Code",
   "version": "1.0.0",
+  "publisher": "brpaz",
   "engines": {
     "vscode": "^1.40.0"
   },
