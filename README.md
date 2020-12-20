@@ -4,8 +4,10 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brpaz/vscode-sao-extension/CI?style=for-the-badge)](https://github.com/brpaz/vscode-sao-extension/actions)
+
 [![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/brpaz.vscode-sao?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=brpaz.vscode-sao)
-[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/b?style=for-the-badge)
+
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/brpaz.vscode-sao?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=brpaz.vscode-sao)
 
 ## Features
 

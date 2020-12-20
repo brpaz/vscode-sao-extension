@@ -3,6 +3,7 @@
   "displayName": "VSCode SAO",
   "description": "Trigger SAO.js generators from VS Code",
   "version": "1.0.0",
+  "icon": "icon.png",
   "publisher": "brpaz",
   "author": {
     "name": "Bruno Paz",
