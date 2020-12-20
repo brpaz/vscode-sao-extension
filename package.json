@@ -10,7 +10,8 @@
     "url": "https://brunopaz.dev"
   },
   "repository": {
-    "url": "brpaz/vscode-sao-extension"
+    "url": "https://github.com/brpaz/vscode-sao-extension",
+    "type": "git"
   },
   "engines": {
     "vscode": "^1.40.0"
