@@ -1,0 +1,99 @@
+{
+  "name": "vscode-sao",
+  "displayName": "VSCode SAO",
+  "description": "Trigger SAO js generators from VS Code",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "sao",
+    "templates",
+    "scaffolding"
+  ],
+  "activationEvents": [
+    "onCommand:sao.run-generator"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sao.run-generator",
+        "title": "SAO: Run generator"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "sao.run-generator",
+          "group": "2_workspace",
+          "when": "explorerResourceIsFolder"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "lint:fix": "eslint src --ext ts --fix",
+    "watch": "tsc -watch -p ./",
+    "test": "jest --passWithNoTests",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^9.0.0",
+    "@types/glob": "^7.1.3",
+    "@types/node": "^14.14.14",
+    "@types/vscode": "^1.52.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "add": "^2.0.6",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "glob": "^7.1.6",
+    "husky": "^4.3.6",
+    "jest": "^26.6.3",
+    "jest-junit": "^12.0.0",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "semantic-release": "^17.3.0",
+    "semantic-release-vsce": "^3.0.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.4.1",
+    "yarn": "^1.22.10"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "semantic-release-vsce"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts}": [
+      "eslint . --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest-junit": {
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}"
+  }
+}
