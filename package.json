@@ -41,7 +41,7 @@
     "lint": "eslint src --ext ts",
     "lint:fix": "eslint src --ext ts --fix",
     "watch": "tsc -watch -p ./",
-    "test": "jest --passWithNoTests",
+    "test": "jest",
     "release": "semantic-release"
   },
   "devDependencies": {
