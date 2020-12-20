@@ -4,6 +4,14 @@
   "description": "Trigger SAO.js generators from VS Code",
   "version": "1.0.0",
   "publisher": "brpaz",
+  "author": {
+    "name": "Bruno Paz",
+    "email": "oss@brunopaz.dev",
+    "url": "https://brunopaz.dev"
+  },
+  "repository": {
+    "url": "brpaz/vscode-sao-extension"
+  },
   "engines": {
     "vscode": "^1.40.0"
   },
